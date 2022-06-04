@@ -15,7 +15,7 @@ html,body
     padding: 0px;
     scroll-behavior: smooth;
     /* removing kindoff botton scrolling(overflowing on x-axis is hidding now ) */
-    overflow-x: hidden; 
+    overflow-x: hidden;
 }
 
 /* custom nabar css over bootstrap */
@@ -23,9 +23,9 @@ html,body
 .navbar{
    max-width:100%;
 
-    padding-left: 50px;
-    
-  
+   padding-left: 25px;
+
+
     background: #41295a;  /* fallback for old browsers */
 background: -webkit-linear-gradient(to right, #2F0743, #41295a);  /* Chrome 10-25, Safari 5.1-6 */
 background: linear-gradient(to right, #2F0743, #41295a) !important;  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
@@ -33,9 +33,13 @@ background: linear-gradient(to right, #2F0743, #41295a) !important;  /* W3C, IE 
 }
 
 
+.navbar-theme-toggle{
+    margin-left: 7vw;
+}
+
 
 #title{
-    
+
     min-width: 100%;
     padding-top: 150px;
     padding-left: 5%;
@@ -44,7 +48,7 @@ background: linear-gradient(to right, #2F0743, #41295a) !important;  /* W3C, IE 
 
     /* gradient for background */
 
- 
+
     background: #41295a;  /* fallback for old browsers */
 background: -webkit-linear-gradient(to right, #2F0743, #41295a);  /* Chrome 10-25, Safari 5.1-6 */
 background: linear-gradient(to right, #2F0743, #41295a) !important;  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
@@ -66,6 +70,8 @@ background: linear-gradient(to right, #2F0743, #41295a) !important;  /* W3C, IE 
 }
 
 .img-responsive-brand {
+    margin-left:  5px !important;
+    border-radius: 50px;
     height: auto;
     width: auto;
     max-height: 50px;
@@ -88,9 +94,9 @@ background: linear-gradient(to right, #2F0743, #41295a) !important;  /* W3C, IE 
 
 @media (max-width: 600px){
 
-    .title-img{
-        width: 200px;
-
+     .title-img {
+        width: 100%;
+        left: 0%;
     }
 }
 
@@ -122,7 +128,7 @@ background: linear-gradient(to right, #2F0743, #41295a) !important;  /* W3C, IE 
     bottom: 0;
     left: 0;
     margin: auto;
-    
+
     width :34px;
     height: 55px;
   }
@@ -162,13 +168,22 @@ background: linear-gradient(to right, #2F0743, #41295a) !important;  /* W3C, IE 
       margin-bottom: 20px;
   }
 
+  @media(max-width: 600px) {
+    #outerbuttons {
+        width: 100%;
+        text-align: center;
+    }
+    #inner {
+        display: inline-block;
+    }
+}
 
 
 
 /* Features section styling */
 
 #features{
-   
+
     background: #41295a;  /* fallback for old browsers */
     background: -webkit-linear-gradient(to right, #2F0743, #41295a);  /* Chrome 10-25, Safari 5.1-6 */
     background: linear-gradient(to right, #2F0743, #41295a) ;
@@ -199,7 +214,7 @@ background: linear-gradient(to right, #2F0743, #41295a) !important;  /* W3C, IE 
     }
 
 
-   
+
 }
 
 
@@ -288,8 +303,8 @@ hr{
     background: #360033;  /* fallback for old browsers */
     background: -webkit-linear-gradient(to right, #0b8793, #360033);  /* Chrome 10-25, Safari 5.1-6 */
     background: linear-gradient(to right, #0b8793, #360033); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-    
-    
+
+
 }
 
 #contact-us h1, #contact-us p{
@@ -299,47 +314,42 @@ hr{
 }
 
 
-.contact-us-form{
+
+.contact-us-form {
     position: relative;
     padding: 2%;
     margin-top: 2%;
     margin-left: auto;
     margin-right: auto;
-    height: 650px;
-    width: 500px;
+    height: 750px;
+    width: 530px;
     background-color: aliceblue;
     border-radius: 15px;
     transition: width 1s;
-   
-
 }
-
 
 .loading-animation{
     visibility: hidden;
-    
+
     text-align: center;
     box-sizing: border-box;
 }
 
 /* Hover effect only on big screens */
 
-@media (min-width: 700px){
-
-    .contact-us-form:hover{
+@media (min-width: 700px) {
+    .contact-us-form:hover {
         /* height: 630px; */
-        width: 560px;
-    
-
-
+        width: 540px;
+    }
 }
-}
+
 
 .custom-form{
-   
+
     position: relative;
     text-align: center;
-    
+
 }
 
 .contact-us-form label{
@@ -432,43 +442,29 @@ hr{
 
 
 /* Form styling for mobile devices */
-@media (max-width: 600px){
-    .form-control{
+@media (max-width: 600px) {
 
-        width: 60%;
-    }
-
-    .contact-us-form{
-        height: 75vh;
-    }
-    .custom-form{
-
+    /* .contact-us-form {
+        height: 92vh;
+    } */
+    .custom-form {
         text-align: left;
     }
-
-    .custom-button{
-       
+    .custom-button {
         position: relative;
-
-     margin-top: 2%;
+        margin-top: 2%;
         height: 130%;
         width: 90%;
     }
-
-    .contact-us-form{
-
+    .contact-us-form {
         width: 300px;
     }
-
-    .form-row{
+    .form-row {
         margin-left: 5%;
     }
-
-    .form-control{
+    .form-control {
         width: 85%;
     }
-
-
 }
 
 
@@ -507,23 +503,36 @@ hr{
 #faq-section{
      position: relative;
     z-index: 3;
-    padding-top: 5%;
-    padding-left: 10%;
-    padding-right: 10%;
-    padding-bottom: 5%;
+    padding-top: 5% ;
+    padding-left: 2% ;
+    padding-right: 5% ;
+    padding-bottom: 5% ;
     background: #41295a;  /* fallback for old browsers */
     background: -webkit-linear-gradient(to right, #2F0743, #41295a);  /* Chrome 10-25, Safari 5.1-6 */
     background: linear-gradient(to right, #2F0743, #41295a) !important;  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-    
+
 }
+
+
+
+@media(max-width : 600px){
+
+    .custom-faq{
+     width: 95vw !important;
+
+    }
+}
+
 
 .card-header{
     padding: 0%;
 
 }
 
-#faq-section h1{
+#faq-section > h3{
     color: aliceblue;
+    padding-bottom: 5%;
+    text-align: center;
 }
 
 
@@ -545,15 +554,30 @@ hr{
   }
 
 
-  
+
 
   #form-time{
     visibility: hidden;
 }
 
 
-#form-response{
-    padding-bottom: 2%;
-    font-weight: bolder;
+#form-response {
+    opacity: 0;
+    padding-bottom: 1%;
+    font-weight: 600;
     font-size: medium;
+    border-radius: 15px;
+    background-color: rgb(158, 217, 235);
+    margin-bottom: 5px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: all 1s cubic-bezier(0.075, 0.82, 0.165, 1);
 }
+
+
+.giphy{
+    border-radius: 25px;
+    height:200px;
+    width:200px;
+    box-shadow: 3px 3px 2px grey;
+    margin-bottom:5px;
+  }

@@ -16,6 +16,8 @@ html, body {
 }
 
 .img-responsive-brand {
+    margin-left:  5px !important;
+    border-radius: 50px;
     height: auto;
     width: auto;
     max-height: 50px;
@@ -26,7 +28,7 @@ html, body {
 
 .navbar {
     max-width: 100%;
-    padding-left: 50px;
+    padding-left: 25px;
     color: aliceblue;
     background: #C33764;
     /* fallback for old browsers */
@@ -36,6 +38,10 @@ html, body {
     /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
+
+.navbar-theme-toggle{
+    margin-left: 7vw;
+}
 #title {
     min-width: 100%;
     padding-top: 150px;
@@ -301,8 +307,8 @@ hr {
     margin-top: 2%;
     margin-left: auto;
     margin-right: auto;
-    height: 650px;
-    width: 500px;
+    height: 750px;
+    width: 530px;
     background-color: aliceblue;
     border-radius: 15px;
     transition: width 1s;
@@ -319,7 +325,7 @@ hr {
 @media (min-width: 700px) {
     .contact-us-form:hover {
         /* height: 630px; */
-        width: 560px;
+        width: 540px;
     }
 }
 
@@ -416,12 +422,10 @@ hr {
 /* Form styling for mobile devices */
 
 @media (max-width: 600px) {
-    .form-control {
-        width: 60%;
-    }
-    .contact-us-form {
-        height: 80vh;
-    }
+
+    /* .contact-us-form {
+        height: 92vh;
+    } */
     .custom-form {
         text-align: left;
     }
@@ -473,17 +477,21 @@ hr {
 #faq-section {
     position: relative;
     z-index: 3;
-    padding-top: 5%;
-    padding-left: 10%;
-    padding-right: 10%;
-    padding-bottom: 5%;
+    padding-top: 5% ;
+    padding-left: 2% ;
+    padding-right: 5% ;
+    padding-bottom: 5% ;
     background-color: rgb(235, 230, 230);
 }
 
 
+
+
 @media(max-width : 600px){
+
     .custom-faq{
-       padding-right: 15px;
+     width: 95vw !important;
+
     }
 }
 
@@ -519,9 +527,15 @@ hr {
 }
 
 #form-response {
-    padding-bottom: 2%;
-    font-weight: bolder;
+    opacity: 0;
+    padding-bottom: 1%;
+    font-weight: 600;
     font-size: medium;
+    border-radius: 15px;
+    background-color: rgb(158, 217, 235);
+    margin-bottom: 5px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: all 1s cubic-bezier(0.075, 0.82, 0.165, 1);
 }
 
 /*Symbol effect for Services */
